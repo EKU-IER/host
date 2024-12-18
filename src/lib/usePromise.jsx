@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function usePromise(promise) {
+export const usePromise = (promise) => {
   const [state, setState] = useState(null);
 
   useEffect(() => {
@@ -16,4 +16,4 @@ export function usePromise(promise) {
   }, [promise]);
 
   return state;
-}
+};
